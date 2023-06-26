@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper ">
+            <div class="slides">
+                <div class="slide1">
+                    <h5>at groov.</h5>
+                    <p class="p1">we celebrate perfomence.</p>
+                    <p class="p2">The work in the gym</p>
+                    <p class="p3">Practice sessions.</p>
+                    <p class="p4">Doing the thing you do over.</p>
+                    <p class="p5">and over, and over.</p>
+                    <p class="p6">Getting better. Feeling better, Being better.</p>
+                    <h3 class="top">were here to help.</h3>
+                    <p class="p7">In game day. In Practice.</p>
+                    <p class="p8">In every workout</p>
+                    <p class="p9">and on your walk out of the arena.</p>
+                    <p class="p10">While we can't</p>
+                    <p class="p11">make you work harder.</p>
+                    <p class="p12">we can make sure that.</p>
+                    <h2>your body <br><span>is ready.</span></h2>
+                    <p class="p13">so that whenyou make</p>
+                    <h3 class="middle">that choice.</h3>
+                    <p class="p14">when youdecide to</p>
+                    <h4 class="top">be great.</h4>
+                    <h3 class="bottom">you are</h3>
+                    <p class="p15">Now get</p>
+                    <p class="p16">out there</p>
+                    <h4 class="middle">be you.</h4>
+                    <p class="p17">be strong</p>
+                    <p class="p18">Do it your way.</p>
+                    <p class="p19">We're excited</p>
+                    <p class="p20">to be a part of</p>
+                    <p class="p21">your journey.</p>
+                    <p class="p22">to help make you</p>
+                    <h2 class="bottom">the best</h2>
+                    <p class="p23">In everything</p>
+                    <h1>you</h1>
+                    <h5 class="bottom">Do</h5>
+                </div>
+                <div class="slide2">
+                    <h5>at groov.</h5>
+                    <p class="p1">we celebrate perfomence.</p>
+                    <p class="p2">The work in the gym</p>
+                    <p class="p3">Practice sessions.</p>
+                    <p class="p4">Doing the thing you do over.</p>
+                    <p class="p5">and over, and over.</p>
+                    <p class="p6">Getting better. Feeling better, Being better.</p>
+                    <h3 class="top">were here to help.</h3>
+                    <p class="p7">In game day. In Practice.</p>
+                    <p class="p8">In every workout</p>
+                    <p class="p9">and on your walk out of the arena.</p>
+                    <p class="p10">While we can't</p>
+                    <p class="p11">make you work harder.</p>
+                    <p class="p12">we can make sure that.</p>
+                    <h2>your body <br><span>is ready.</span></h2>
+                    <p class="p13">so that whenyou make</p>
+                    <h3 class="middle">that choice.</h3>
+                    <p class="p14">when youdecide to</p>
+                    <h4 class="top">be great.</h4>
+                    <h3 class="bottom">you are</h3>
+                    <p class="p15">Now get</p>
+                    <p class="p16">out there</p>
+                    <h4 class="middle">be you.</h4>
+                    <p class="p17">be strong</p>
+                    <p class="p18">Do it your way.</p>
+                    <p class="p19">We're excited</p>
+                    <p class="p20">to be a part of</p>
+                    <p class="p21">your journey.</p>
+                    <p class="p22">to help make you</p>
+                    <h2 class="bottom">the best</h2>
+                    <p class="p23">In everything</p>
+                    <h1>you</h1>
+                    <h5 class="bottom">Do</h5>
+                </div>
+            </div>
+            <div class="icon">
+                <div class="left-arrow">
+                    <div class="inner-arrow"></div>
+                </div>
+                <div class="right-arrow">
+                    <div class="inner-arrow"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js.js"></script>
+    <script type="text/javascript" language="javascript">
+        $(document).ready(function () {
+            setTimeout(() => {
+                $(".wrapper").css("bottom", "0");
+            }, 700)
+            $(".left-arrow").click(() => {
+                $(".slides").addClass("left")
+                setTimeout(() => {
+                    $(".slides").css('transform', 'translateX(-425px)');
+
+                }, 800);
+                $(".slides").removeClass("right")
+            })
+            $(".right-arrow").click(() => {
+                $(".slides").addClass("right")
+                setTimeout(() => {
+                    $(".slides").css('transform', 'translateX(0)');
+
+                }, 800);
+                $(".slides").removeClass("left")
+            })
+        });  
+    </script>
+</body>
+
+</html>

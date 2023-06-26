@@ -1,0 +1,267 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: #000;
+    color: #fff;
+    font-size: 10px;
+}
+.container{
+    width: 400px;
+    margin: auto;
+    margin-top: 30px;
+    overflow: hidden;
+    height:570px;
+    position: relative;
+}
+h1, h2, h3, h5, h6{
+    color: #36a0f8;
+    text-transform: uppercase;
+}
+h5 {
+    margin-left: 95px;
+    letter-spacing: 7px;
+    font-size: 10px;
+}
+p.p1 {
+    margin-left: 78px;
+    letter-spacing: 2px;
+}
+p.p2 {
+    margin-left: 64px;
+    letter-spacing: 5px;
+}
+p.p3 {
+    margin-left: 50px;
+    letter-spacing: 8px;
+}
+p.p4 {
+    margin-left: 45px;
+    letter-spacing: 4px;
+}
+p.p5 {
+    margin-left: 43px;
+    letter-spacing: 9px;
+}
+p.p6 {
+    margin-left: 44px;
+    letter-spacing: 1.5px;
+}
+h3.top {
+    margin-left: 48px;
+    letter-spacing: 3px;
+    font-size: 16px;
+}
+p.p7 {
+    margin-left: 54px;
+    letter-spacing: 5px;
+}
+p.p8 {
+    margin-left: 60px;
+    letter-spacing: 9px;
+}
+p.p9 {
+    margin-left: 63px;
+    letter-spacing: 2px;
+}
+p.p10 {
+    margin-left: 70px;
+    letter-spacing: 9.5px;
+}
+p.p11 {
+    margin-left: 75px;
+    letter-spacing: 4px;
+}
+p.p12 {
+    margin-left: 84px;
+    letter-spacing: 3px;
+}
+h2 {
+    margin-left: 91px;
+    font-size: 12px;
+}
+h2 {
+    margin-left: 91px;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+h2 span {
+    margin-left: 12px;
+}
+p.p13 {
+    margin-left: 109px;
+    letter-spacing: 1px;
+}
+
+h3.middle {
+    margin-left: 113px;
+    letter-spacing: 3px;
+    color: #fff;
+}
+p.p14 {
+    margin-left: 118px;
+    letter-spacing: 2px;
+}
+h4.top {
+    margin-left: 117px;
+    letter-spacing: 9px;
+    font-size: 14px;
+}
+h3.bottom {
+    margin-left: 120px;
+    font-size: 18px;
+    letter-spacing: 6px;
+}
+p.p15 {
+    margin-left: 120px;
+    letter-spacing: 15px;
+    font-size: 12px;
+}
+p.p16 {
+    margin-left: 114px;
+    letter-spacing: 14px;
+    font-size: 12px;
+}
+h4.middle {
+    margin-left: 105px;
+    letter-spacing: 22px;
+    font-size: 15px;
+}
+p.p17 {
+    margin-left: 92px;
+    font-size: 16px;
+    letter-spacing: 18px;
+}
+p.p18 {
+    margin-left: 82px;
+    letter-spacing: 12px;
+    font-size: 12px;
+}
+p.p19 {
+    margin-left: 71px;
+    letter-spacing: 16px;
+    font-size: 12px;
+}
+p.p20 {
+    margin-left: 70px;
+    letter-spacing: 15px;
+}
+p.p21 {
+    margin-left: 71px;
+    letter-spacing: 18px;
+}
+p.p22 {
+    margin-left: 80px;
+    letter-spacing: 11px;
+}
+h2.bottom {
+    margin-left: 89px;
+    letter-spacing: 14px;
+}
+p.p23 {
+    margin-left: 102px;
+    letter-spacing: 10px;
+}
+h1 {
+    margin-left: 118px;
+    font-size: 42px;
+    letter-spacing: 24px;
+}
+h5.bottom {
+    margin-left: 144px;
+    font-size: 29px;
+    letter-spacing: 34px;
+}
+.left .slide1 h1,
+.left .slide1 h2,
+.left .slide1 h3,
+.left .slide1 h4,
+.left .slide1 h5,
+.left .slide1 h6{
+    animation: changeleft ease 1.5s ;
+}
+@keyframes changeleft {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-50px);
+    }
+}
+.right .slide2 h1,
+.right .slide2 h2,
+.right .slide2 h3,
+.right .slide2 h4,
+.right .slide2 h5,
+.right .slide2 h6{
+    animation: changeright ease 1.5s ;
+}
+@keyframes changeright {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(50px);
+    }
+}
+.wrapper{
+    padding: 30px 0;
+    position: relative;
+    bottom: -600px;
+    transition: 2s;
+}
+.slides{
+    position: relative;
+    transition: 2s;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+}
+
+@keyframes left {
+    0%{
+        left: 0;
+    }
+    100%{
+        left: -344px;
+    }
+}
+.left-arrow, .right-arrow {
+    background: #1d1b1b;
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 21px;
+    right: 56px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 30px;
+}
+.inner-arrow {
+    border: 1px solid;
+    width: 50%;
+    position: relative;
+}
+.inner-arrow::after {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    transform: rotate(45deg);
+    top: -4px;
+    right: 0px;
+}
+.right-arrow{
+    right: 10px;
+}
+.right-arrow .inner-arrow::after{
+    transform: rotate(-130deg);
+    left: 0;
+}
